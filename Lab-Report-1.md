@@ -28,7 +28,7 @@ bash: cd: Hello.java: Not a directory
 
 ```
 - Absolute path to working directory right before: /c/Users/shlim/lecture1
-- Reason for output: Hello.java is a file and not a directory and `cd` can only take a directory as an argument so it produces an error.
+- Reason for output: An error message is produced in terminal that states that Hello.java is not a directory. Hello.java is a file and not a directory and `cd` can only take a directory as an argument so it produces an error.
 
 # Command: ls
 **No argument**
@@ -59,7 +59,7 @@ Hello.java
 
 ```
 - Absolute path to working directory right before: /c/Users/shlim/lecture1
-- Reason for output: Hello.java exists in /c/Users/shlim/lecture1 which is the current working directory so `ls Hello.java` lists the file in the given path which is just Hello.java.
+- Reason for output: Hello.java exists in /c/Users/shlim/lecture1 which is the current working directory so `ls Hello.java` lists the file in the given path which is just Hello.java. This is not an error.
 
 # Command: cat
 **No argument**
@@ -79,7 +79,7 @@ cat: lecture1: Is a directory
 
 ```
 - Absolute path to working directory right before: /c/Users/shlim
-- Reason for output: `cat` is used to print the contents of a file and since the argument given is not a file but a directory `cat` doesn't do anything. This is not an error.
+- Reason for output: `cat` is used to print the contents of a file and since the argument given is not a file but a directory, `cat` doesn't do anything. This is not an error.
 
 **Path to file as argument**
 ```
