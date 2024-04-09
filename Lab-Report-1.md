@@ -6,7 +6,7 @@ $ cd
 
 ```
 - Absolute path to working directory right before: `/c/Users/shlim`
-- Reason for output: `cd` changes directory but since there was no argument given it returns the working directory back to the home directory, however since the working directory right before was already the home directory then it stays in the same directory. This is not an error.
+- Reason for output: The command `cd` is used to switch the current working directory to the given path, but since there was no argument given it defaults to switching the current working directory back to the home directory. Since the working directory right before the command was given was already the home directory then it stays in the same directory. This is not an error.
 
 **Path to directory as argument**
 ```
@@ -18,7 +18,7 @@ $
 ```
 
 - Absolute path to working directory right before: `/c/Users/shlim`
-- Reason for output: `cd lecture1` switches the current working directory(which is the home directory) to the given path (which is lecture1) so the working directory becomes `/c/Users/shlim/lecture1`. This is not an error.
+- Reason for output: `cd lecture1` switches the current working directory (which is the home directory) to the given path (which is lecture1) so the working directory becomes `/c/Users/shlim/lecture1`. This is not an error.
 
 **Path to file as argument**
 ```
@@ -28,7 +28,7 @@ bash: cd: Hello.java: Not a directory
 
 ```
 - Absolute path to working directory right before: `/c/Users/shlim/lecture1`
-- Reason for output: An error message is produced in terminal that states that `Hello.java` is not a directory. `Hello.java` is a file and not a directory and `cd` can only take a directory as an argument so it produces an error, so this error message is expected and is an error caused by the wrong type of argument.
+- Reason for output: An error message is displayed that states that `Hello.java` is not a directory. `Hello.java` is a file and not a directory and since `cd` can only take a directory as an argument (because `cd` is used to switch the current working directory to the given path) and a working directory can't be a file, it produces an error.
 
 # Command: ls
 **No argument**
@@ -39,11 +39,11 @@ Hello.class  Hello.java  messages/  README
 
 ```
 - Absolute path to working directory right before: `/c/Users/shlim/lecture1`
-- Reason for output: When no argument is given to `ls` it defaults to display the files and folders in the current working directory, which is `lecture1`, which is what was displayed. This is not an error.
+- Reason for output: When no argument is given to `ls` it defaults to display the files and folders in the current working directory, which is `lecture1`. `Hello.class`, `Hello.java`, `messages/`, and `README` are all of the files and folders in `lecture1`, so this is not an error.
 
 **Path to directory as argument**
 ```
-shlim@Abi_HP_Laptop MINGW64 ~
+shlim@Abi_HP_Laptop MINGW64 ~/lecture1 (main)
 $ ls lecture1
 ls: cannot access 'lecture1': No such file or directory
 
@@ -79,7 +79,7 @@ cat: lecture1: Is a directory
 
 ```
 - Absolute path to working directory right before: `/c/Users/shlim`
-- Reason for output: `cat` is used to print the contents of a file and since the argument given, `lecture1`, is not a file but a directory, `cat` doesn't do anything. This is an error produced by the fact that the given argument is not a file that the command can print the contents of.
+- Reason for output: `cat` is used to print the contents of a file and since the argument given, `lecture1`, is not a file but a directory, an error message is displayed stating that `lecture1` is a directory. This is an error produced by the fact that the given argument is not a file that the command can print the contents of.
 
 **Path to file as argument**
 ```
@@ -98,6 +98,6 @@ public class Hello {
 }
 ```
 - Absolute path to working directory right before: `/c/Users/shlim/lecture1`
-- Reason for output: `cat` printed out the contents of `Hello.java` to the terminal. This is not an error, because `cat` is supposed to print the contents of the file given by the path.
+- Reason for output: `cat` printed out the contents of `Hello.java`. This is not an error, because `cat` is supposed to print the contents of the file given by the path.
 
 
