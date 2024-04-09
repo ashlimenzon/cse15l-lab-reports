@@ -69,7 +69,7 @@ $ cat
 
 ```
 - Absolute path to working directory right before: /c/Users/shlim/lecture1
-- Reason for output: ?
+- Reason for output: The command didn't finish. This is an error because `cat` is used to print the contents of a file and because no argument is given the command doesn't complete.
 
 **Path to directory as argument**
 ```
