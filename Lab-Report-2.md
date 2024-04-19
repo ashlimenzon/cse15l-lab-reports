@@ -1,3 +1,4 @@
+# Part 1:
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -33,4 +34,21 @@ class ChatServer {
     }
 }
 ```
+![Image](ChatServer1.png)
+- **Methods Called:** The handleRequest method is called.
+- **Relevant Arguments/ Values of Relevant Fields:** The relevant argument is the `url` that is then taken in as a parameter. `str` is initially an empty string field in the `Handler` class.
+- **Values Change:** When I add the request `/add-message?s=Hello&user=jpolitz` the `str` field is changed. The value passed in for user and message is added to `str` with a new line following them. In this case the code starts by seperating the query `s=Hello&user=jpolitz` at the & symbol and storing it in an array of Strings called `parameters`. Then the code further splits the two Strings stored in parameters at the = symbol. It stores the 1 index of `parameters` split at = in the String array `userParam` and the 0 index in the String array `messageParam`. Then String `user` gets the value of `userParam` at index 1 and the String `message` gets the value of `messageParam` at index 1. These two strings store only the user and message value that is needed to be returned. Finally, the string containing `user` and `message` is added to `str.` Updating and then returning the new value of str.
 
+
+
+
+
+
+![Image](ChatServer.png)
+- **Methods Called:** The handleRequest method is called.
+- **Relevant Arguments/ Values of Relevant Fields:** The relevant argument is the `url` that is then taken in as a parameter. `str` is a string containing "jpolitz: Hello".
+- **Values Change:** When I add the request `/add-message?s=How are you&user=yash` the `str` field is again updated. The code goes through the same steps as it did for the previous request. However this time the `str` field adds on to the already existing String "jpolitz:hello\n" making str "jpolitz: hello\nyash: How are you". This then appears on the screen as two seperate lines.
+
+  # Part 2:
+  
+  
