@@ -50,5 +50,9 @@ class ChatServer {
 - **Values Change:** When I add the request `/add-message?s=How are you&user=yash` the `str` field is again updated. The code goes through the same steps as it did for the previous request. However this time the `str` field adds on to the already existing String "jpolitz:hello\n" making str "jpolitz: hello\nyash: How are you". This then appears on the screen as two seperate lines.
 
   # Part 2:
-  
+  ![Image](lsCommand.png)
+  ![Image](sshLogin.png)
+
+  # Part 3:
+  In the week 2 lab I learned that you can authenticate a remote server using a private key that is stored on your computer and in the remote server.
   
