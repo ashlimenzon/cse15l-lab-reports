@@ -48,7 +48,7 @@ class ChatServer {
 ![Image](ChatServer.png)
 - **Methods Called:** The handleRequest method is called.
 - **Relevant Arguments/ Values of Relevant Fields:** The relevant argument is the `url` that is then taken in as a parameter. `str` is a string containing "jpolitz: Hello".
-- **Values Change:** When I add the request `/add-message?s=How are you&user=yash` the `str` field is again updated. The code goes through the same steps as it did for the previous request. However this time the `str` field adds on to the already existing String "jpolitz:hello\n" making str "jpolitz: hello\nyash: How are you". This then appears on the screen as two seperate lines.
+- **Values Change:** When I add the request `/add-message?s=How are you&user=yash` the `str` field is again updated. The code goes through the same steps as it did for the previous request. However this time the `str` field adds on to the already existing String "jpolitz:hello\n" making str "jpolitz: hello\nyash: How are you". This then appears on the screen as two seperate lines, because \n is a new line character which is an escape sequence that makes the rest of the string be printed on the next line on the screen.
 
   # Part 2:
   **Private Key:**
@@ -64,5 +64,5 @@ class ChatServer {
   ![Image](sshLogin.png)
 
   # Part 3:
-  In the week 3 lab I learned that you can authenticate a remote server using a private key that is stored on your computer and in the remote server.
+  In the week 2 lab I learned how to set up and run a web server locally and remotely. In the week 3 lab I learned how to create and use SSH key-based authentication to allow me to access a remote server much quicker as they key authenticates my local computer allowing me to login without a password.
   
