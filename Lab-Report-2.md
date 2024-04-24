@@ -64,5 +64,5 @@ class ChatServer {
   ![Image](sshLogin.png)
 
   # Part 3:
-  In the week 2 lab I learned how to set up and run a web server locally and remotely. In the week 3 lab I learned how to create and use SSH key-based authentication to allow me to access a remote server much quicker as they key authenticates my local computer allowing me to login without a password.
+  In the week 2 lab I learned how to set up and run a web server locally and remotely. In the week 3 lab I learned how to create and use SSH key-based authentication to allow me to access a remote server much quicker as the key authenticates my local computer allowing me to login without a password.
   
