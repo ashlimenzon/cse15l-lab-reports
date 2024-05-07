@@ -57,7 +57,7 @@ class ChatServer {
   
   **Public Key:**
   
-  ![PublicKey](publicKeyls.png)
+  ![PublicKey](new.png)
   
   **Login:**
   
