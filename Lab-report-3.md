@@ -19,7 +19,7 @@
 	}
 ```
 3. output of running tests:
-    ![Image](test.png)
+![Image](test.png)
   
 5. bug before:
 ```
