@@ -19,9 +19,9 @@
 	}
 ```
 3. output of running tests:
-   
+    ![Image](test.png)
   
-4. bug before:
+5. bug before:
 ```
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
