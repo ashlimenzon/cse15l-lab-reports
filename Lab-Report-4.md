@@ -14,5 +14,5 @@
   * **Keys pressed:** `bash test.sh` I again ran the tests using the bash command with the argument test.sh.
   * **Image:** ![Image](step8.png)
 * **Step 9:**
-  * **Keys pressed:** `
+  * **Keys pressed:** `git add . , git commit -m "tests passed" , git push` I used the `git` command with the arguments `add` and `.` in order to add all the changes that were made in the current directory and its subdirectories to the staging area. I then used the `git` command with the argument `commit` and the option `-m "tests passed"` to commit the changes made to the repository with a message describing the changes that were made. Finally, I used the `git` command with the argument `push` to upload the content from the local repo on my ieng6 account to the remote rep in my Github account.
   * **Image:** ![Image](step9.png)
