@@ -2,7 +2,7 @@
   * **Keys pressed:** `ssh<space>ashlimenzon@ieng6.ucsd.edu<enter>` I used the `ssh` command with `ashlimenzon@ieng6.ucsd.edu` as the argument to login to my ieng6 account.
   * **Image:** ![Image](step4.png)
 * **Step 5:**
-  * **Keys pressed:** `git<space>clone<space><Ctrl-V><enter>` I used the `git` command with the two arguments: `clone` and I used `<Ctrl-V>` to get the SSH URL: `git@github.com:ashlimenzon/lab7.git`(because I copied it from my github account using <Ctrl-C>) so that the fork of the repository on my Github account would be cloned in my ieng6 account.
+  * **Keys pressed:** `git<space>clone<space><Ctrl-V><enter>` I used the `git` command with the two arguments: `clone` and I used `<Ctrl-V>` to get the SSH URL: `git@github.com:ashlimenzon/lab7.git` (because I copied it from my github account using `<Ctrl-C>`)so that the fork of the repository on my Github account would be cloned in my ieng6 account.
   * **Image:** ![Image](step5.png)
 * **Step 6:** 
   * **Keys pressed:** `cd<space>lab7/<enter>` and `bash<space>test.sh<enter>` I used the `cd` command with the argument `lab7/` to change directories from the main directory to lab7. I then ran the tests using the `bash` command with the argument `test.sh` which ran `test.sh` which is a bashscript and outputted in terminal the tests that were passing and failing.
